@@ -1,0 +1,117 @@
+# Overhauled summer 2015 by Dr. Azzy (Spence Konde) and again in early 2016 to add support for more chips. 
+# Modified by California STEAM (Sander van de Bor) to add micronucleus
+
+menu.chip=Chip
+menu.clock=Clock
+menu.bod=B.O.D. Level
+menu.bodact=B.O.D. Mode (active)
+menu.bodpd=B.O.D. Mode (sleep)
+menu.eesave=Save EEPROM
+menu.vcc=Voltage
+menu.pinmapping=Pin Mapping
+menu.INITIALIZE_SECONDARY_TIMERS=Initialize Secondary Timers
+menu.TimerClockSource=Timer 1 Clock
+menu.LTO=LTO (1.6.11+ only)
+menu.bootUART=Bootloader UART
+menu.wiremode=Wire Modes
+
+
+californiasteam84.name=ATtiny84 (California STEAM)
+
+californiasteam84.upload.maximum_size=6658
+californiasteam84.upload.maximum_data_size=512
+californiasteam84.upload.tool=micronucleus
+californiasteam84.upload.protocol=usb
+#californiasteam84.upload.using=micronucleusprog
+californiasteam84.bootloader.tool=ATTinyCore:avrdude
+californiasteam84.build.mcu=attiny84
+californiasteam84.build.f_cpu=8000000L
+californiasteam84.build.board=AVR_ATTINYX4
+californiasteam84.build.core=ATTinyCore:tiny
+californiasteam84.build.variant=ATTinyCore:tinyX4_reverse
+#californiasteam84.build.export_merged_output=false
+californiasteam84.menu.LTO.disable=Disabled
+californiasteam84.menu.LTO.disable.ltocflags=
+californiasteam84.menu.LTO.disable.ltoelfflags=
+californiasteam84.menu.LTO.disable.ltocppflags=
+californiasteam84.menu.LTO.disable.ltoarcmd=
+californiasteam84.menu.LTO.enable=Enabled
+californiasteam84.menu.LTO.enable.ltocflags=-flto -fno-fat-lto-objects
+californiasteam84.menu.LTO.enable.ltoelfflags=-g -flto -fuse-linker-plugin
+californiasteam84.menu.LTO.enable.ltocppflags=-flto
+californiasteam84.menu.LTO.enable.ltoarcmd=gcc-
+
+californiasteam85.name=ATtiny85 (DigiSpark)
+
+californiasteam85.upload.maximum_size=6604
+californiasteam85.upload.maximum_data_size=512
+californiasteam85.upload.tool=micronucleus
+californiasteam85.upload.protocol=usb
+#californiasteam85.upload.using=micronucleusprog
+californiasteam85.bootloader.tool=ATTinyCore:avrdude
+californiasteam85.build.mcu=attiny85
+californiasteam85.build.f_cpu=16500000L
+californiasteam85.build.board=AVR_ATTINYX5
+californiasteam85.build.core=ATTinyCore:tiny
+californiasteam85.build.variant=ATTinyCore:tinyX5_reverse
+#californiasteam85.build.export_merged_output=false
+californiasteam85.menu.LTO.disable=Disabled
+californiasteam85.menu.LTO.disable.ltocflags=
+californiasteam85.menu.LTO.disable.ltoelfflags=
+californiasteam85.menu.LTO.disable.ltocppflags=
+californiasteam85.menu.LTO.disable.ltoarcmd=
+californiasteam85.menu.LTO.enable=Enabled
+californiasteam85.menu.LTO.enable.ltocflags=-flto -fno-fat-lto-objects
+californiasteam85.menu.LTO.enable.ltoelfflags=-g -flto -fuse-linker-plugin
+californiasteam85.menu.LTO.enable.ltocppflags=-flto
+californiasteam85.menu.LTO.enable.ltoarcmd=gcc-
+
+californiasteam167.name=ATtiny167 (DigiSpark Pro)
+
+californiasteam167.upload.maximum_size=6780
+californiasteam167.upload.maximum_data_size=512
+californiasteam167.upload.tool=micronucleus
+californiasteam167.upload.protocol=usb
+#californiasteam167.upload.using=micronucleusprog
+californiasteam167.bootloader.tool=ATTinyCore:avrdude
+californiasteam167.build.mcu=attiny167
+californiasteam167.build.f_cpu=16000000L
+californiasteam167.build.board=AVR_ATTINYX7
+californiasteam167.build.core=ATTinyCore:tiny
+californiasteam167.build.variant=ATTinyCore:tinyX7_New
+#californiasteam167.build.export_merged_output=false
+californiasteam167.menu.LTO.disable=Disabled
+californiasteam167.menu.LTO.disable.ltocflags=
+californiasteam167.menu.LTO.disable.ltoelfflags=
+californiasteam167.menu.LTO.disable.ltocppflags=
+californiasteam167.menu.LTO.disable.ltoarcmd=
+californiasteam167.menu.LTO.enable=Enabled
+californiasteam167.menu.LTO.enable.ltocflags=-flto -fno-fat-lto-objects
+californiasteam167.menu.LTO.enable.ltoelfflags=-g -flto -fuse-linker-plugin
+californiasteam167.menu.LTO.enable.ltocppflags=-flto
+californiasteam167.menu.LTO.enable.ltoarcmd=gcc-
+
+californiasteam841.name=ATtiny841 (Wattuino)
+
+californiasteam841.upload.maximum_size=6606
+californiasteam841.upload.maximum_data_size=512
+californiasteam841.upload.tool=micronucleus
+californiasteam841.upload.protocol=usb
+#californiasteam841.upload.using=micronucleusprog
+californiasteam841.bootloader.tool=ATTinyCore:avrdude
+californiasteam841.build.mcu=attiny841
+californiasteam841.build.f_cpu=8000000L
+californiasteam841.build.board=AVR_ATTINYX41
+californiasteam841.build.core=ATTinyCore:tiny
+#californiasteam841.build.variant=
+#californiasteam841.build.export_merged_output=false
+californiasteam841.menu.LTO.disable=Disabled
+californiasteam841.menu.LTO.disable.ltocflags=
+californiasteam841.menu.LTO.disable.ltoelfflags=
+californiasteam841.menu.LTO.disable.ltocppflags=
+californiasteam841.menu.LTO.disable.ltoarcmd=
+californiasteam841.menu.LTO.enable=Enabled
+californiasteam841.menu.LTO.enable.ltocflags=-flto -fno-fat-lto-objects
+californiasteam841.menu.LTO.enable.ltoelfflags=-g -flto -fuse-linker-plugin
+californiasteam841.menu.LTO.enable.ltocppflags=-flto
+californiasteam841.menu.LTO.enable.ltoarcmd=gcc-
